@@ -52,7 +52,7 @@ let countDow = new Date('oct 25, 2022 00:00:00').getTime(),(),
     y = setInterval(function() {
 
       let now = new Date().getTime(),
-          distance = countDown - now;
+          distance = countDow - now;
 
       document.getElementById('diass').innerText = Math.floor(distance / (dayy)),
         document.getElementById('horass').innerText = Math.floor((distance % (dayy)) / (hourr)),
