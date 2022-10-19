@@ -23,11 +23,11 @@ mainDiv.addEventListener('click', function(){
 });
 
 
+
 const second = 1000,
       minute = second * 60,
       hour = minute * 60,
       day = hour * 24;
-
 let countDown = new Date('oct 25, 2022 00:00:00').getTime(),
     x = setInterval(function() {
 
@@ -48,11 +48,11 @@ let countDown = new Date('oct 25, 2022 00:00:00').getTime(),
       hourr = minutee * 60,
       dayy = hourr * 24;
 
-let countDow = new Date('oct 25, 2022 00:00:00').getTime(),(),
+let countDow = new Date('oct 25, 2022 00:00:00').getTime(),
     y = setInterval(function() {
 
       let now = new Date().getTime(),
-          distance = countDow - now;
+          distance = countDown - now;
 
       document.getElementById('diass').innerText = Math.floor(distance / (dayy)),
         document.getElementById('horass').innerText = Math.floor((distance % (dayy)) / (hourr)),
